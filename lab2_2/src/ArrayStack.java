@@ -20,8 +20,7 @@ public class ArrayStack {
 
     public void push(Object o)
     {
-        storage[top+1] = o;
-        top++;
+        storage[++top] = o;
     }
 
     public Object pop()
