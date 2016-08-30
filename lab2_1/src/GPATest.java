@@ -19,6 +19,9 @@ public class GPATest {
         assertEquals(4.0f, gpa.get(), 0);
     }
 
+
+
+
     @Test
     public void multipleClassesSingleGrade() throws Exception {
         gpa.addGrade(4, 4);
