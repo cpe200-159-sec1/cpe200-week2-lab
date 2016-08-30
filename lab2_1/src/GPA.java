@@ -2,15 +2,33 @@
  * Implement grading system.
  */
 public class GPA {
+
+    public float creditXgrade=0,totalCredit=0,calulate=0;
+
+
     public void addGrade(int credit, float grade) {
         /* Your code here */
+        //float creditXgrade=0,totalCredit=0,calulate=0;
+
+        totalCredit+=credit;
+        creditXgrade+=(credit*grade);
+
     }
 
 
     public float get() {
         /* Your code here */
+
+        calulate=(creditXgrade/totalCredit);
+
+        if (calulate<=0.0 || calulate<=4.0) {
+            return calulate;
+        }
         return 0.0f;
+
     }
+
+
     public static void main(String[] args) {
         GPA gpa = new GPA();
         System.out.println("Add data");
