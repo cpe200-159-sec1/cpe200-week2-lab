@@ -13,6 +13,11 @@ public class GPA {
 
     public float get()
     {
+        if(sumcredit==0)
+        {
+            return (float) 0.0;
+        }
+        else
         return sumgrade/sumcredit;
     }
     public static void main(String[] args) {
