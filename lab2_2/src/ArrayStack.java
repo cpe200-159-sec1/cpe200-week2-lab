@@ -20,7 +20,16 @@ public class ArrayStack {
 
     public void push(Object o)
     {
-        /* Your code here */
+        if(top==-1)
+        {
+            storage[0]=o;
+            top++;
+        }
+        else
+        {
+            storage[top+1]=o;
+            top++;
+        }
     }
 
     public Object pop()
@@ -32,8 +41,7 @@ public class ArrayStack {
 
     public int size()
     {
-        /* Your code here */
-        return 0;
+        return top+1;
     }
 
     public static void main(String[] args) {
