@@ -19,10 +19,9 @@ public class ArrayStack {
     }
 
     public void push(Object o)
-    {
-        /* Your code here */
+    {storage[top+1]=o;
+        top+=1;
     }
-
     public Object pop()
     {
         if(top == -1) throw new RuntimeException("Stack underflow");
@@ -30,11 +29,12 @@ public class ArrayStack {
         return storage[top + 1];
     }
 
+
     public int size()
     {
-        /* Your code here */
-        return 0;
+        return top+1;
     }
+
 
     public static void main(String[] args) {
         ArrayStack stack = new ArrayStack();
