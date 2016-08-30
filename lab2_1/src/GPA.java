@@ -11,7 +11,6 @@ public class GPA {
 
 
     public float get() {
-        /* Your code here */
         if(sumcredit == 0) {
             return  0.00f;
         }
